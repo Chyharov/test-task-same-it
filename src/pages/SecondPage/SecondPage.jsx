@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import Header from 'components/Header/Header';
-import SecondPageComponent from 'components/SecondPageComponent/SecondPageComponent';
 
 
 
@@ -8,7 +8,8 @@ const SecondPage = () => {
     <>
         <Header />
     <main>
-        <SecondPageComponent />
+        <h1>Second Page</h1>
+        <Link to="/">to MainPage</Link>
     </main>
     </>
   );
