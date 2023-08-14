@@ -1,12 +1,26 @@
+import React, { useState } from "react";
 
+const NovaPoshtaOfficeForm = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
 
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
-const NovaPoshtaOfficeForm = () => {
-  
+  const handleSearch = () => {
+    onSearch(searchTerm);
+  };
+
   return (
-      <>
-          <h1>NovaPoshtaOfficeForm</h1>
-    </>
+    <div>
+      <input
+        type="text"
+        placeholder="Введіть назву міста українською мовою"
+        value={searchTerm}
+        onChange={handleInputChange}
+      />
+      <button onClick={handleSearch}>Пошук</button>
+    </div>
   );
 };
 

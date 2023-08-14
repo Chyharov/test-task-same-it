@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TrackingResults = ({ trackingInfo }) => {
-    console.log(trackingInfo)
+
   if (!trackingInfo) {
     return null;
   }

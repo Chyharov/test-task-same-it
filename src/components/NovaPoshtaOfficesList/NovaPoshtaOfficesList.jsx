@@ -1,13 +1,17 @@
-import Header from "components/Header/Header";
 
+const NovaPoshtaOfficesList = ({ offices }) => {
 
-const NovaPoshtaOfficesList = () => {
-  
   return (
-      <>
-          <Header />
-          <h1>NovaPoshtaOfficesList</h1>
-    </>
+    <div>
+      <h2>Результати пошуку:</h2>
+      <ul>
+        {offices.map((office) => (
+          <li key={office.Number}>
+            <p>{office.CityDescription} - {office.Description}</p> 
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
