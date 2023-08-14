@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'dccd9bbf39a9263b0b43d1cf06e44a0e';
+const API_KEY = 'cfd822868f3c257a0d180413d03f97e2';
 
 const API_URL = 'https://api.novaposhta.ua/v2.0/json/';
 

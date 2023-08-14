@@ -1,8 +1,7 @@
 import React from 'react';
-import TrackingHistory from 'components/TrackingHistory/TrackingHistory';
 
 const TrackingResults = ({ trackingInfo }) => {
-
+    console.log(trackingInfo)
   if (!trackingInfo) {
     return null;
   }
@@ -17,10 +16,11 @@ const TrackingResults = ({ trackingInfo }) => {
 
   return (
     <div>
-      <h2>Tracking Information</h2>
-      <p>Tracking Number: {trackingDetails.Number}</p>
-      <p>Status: {trackingDetails.Status}</p>
-      <TrackingHistory history={trackingDetails.DocumentChangeReasons} />
+      <ul>
+        <li><p>Статус доставки: {trackingDetails.Status}</p></li>
+        <li><p>Відправлено: {trackingDetails.CitySender}, {trackingDetails.WarehouseSender}</p></li>
+        <li><p>Отримано: {trackingDetails.CityRecipient}, {trackingDetails.WarehouseRecipient}</p></li>
+      </ul>
     </div>
   );
 };

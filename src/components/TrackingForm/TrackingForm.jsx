@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { getTrackingInfo } from '../../api/Api.js';
-import s from './TrackingForm.module.scss'
+import { getTrackingInfo } from '../../services/Api';
 
 
 const TrackingForm = ({ onTrackingInfoReceived }) => {
@@ -18,14 +17,14 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
 
   return (
     <div>
-      <form className={s.form} onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={trackingNumber}
           onChange={(e) => setTrackingNumber(e.target.value)}
           placeholder="Enter tracking number"
         />
-        <button type="submit">Track</button>
+        <button type="submit">Get status TTN</button>
       </form>
     </div>
   );
