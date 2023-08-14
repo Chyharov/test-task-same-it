@@ -1,10 +1,17 @@
-# Event Planet Website
+# Same IT Test Task Website
 
-This is a web pack for test task.
+This is a website designed for searching Nova Poshta parcels and finding pickup
+locations.
 
 ## Description
 
-Users can go to the site, and see clear site
+Users can visit the site to search for Nova Poshta parcels and locate offices to
+collect their parcels.
+
+## Installation
+
+To run this application on your local computer, you need to clone the repository
+and install all the necessary dependencies using the following commands:
 
 ## Installation
 
