@@ -53,13 +53,13 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
   return (
     <section className={s.sectionForm}>
       <form className={s.formSearch} onSubmit={handleSubmit}>
-        <input
+        <input className={s.search__input}
           type="text"
           value={trackingNumber}
           onChange={handleTrackingNumberChange}
           placeholder="Enter tracking number"
         />
-        {trackingNumber.length !== 14 && <p>введіть 14 цифр вашої посилки</p>}
+        {trackingNumber.length !== 14 && <p className={s.input__description}>Введіть 14 цифр вашої посилки</p>}
         <button className={s.button__submit} type="submit" disabled={!validInput}>Get status TTN</button>
       </form>
       <SearchHistory history={searchHistory}
