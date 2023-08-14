@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 const MainPage = lazy(() => import('pages/MainPage/MainPage'));
-const SecondPage = lazy(() => import('pages/SecondPage/SecondPage'));
+const DepartmentsList = lazy(() => import('pages/DepartmentsList/DepartmentsList'));
 
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/SecondPage" element={<SecondPage />} />
+          <Route path="/DepartmentsList" element={<DepartmentsList />} />
         </Routes>
       </Suspense>
     </>
