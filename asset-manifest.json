@@ -1,17 +1,27 @@
 {
   "files": {
     "main.css": "/test-task-same-it/static/css/main.0211fc0d.css",
-    "main.js": "/test-task-same-it/static/js/main.6564ff93.js",
+    "main.js": "/test-task-same-it/static/js/main.0f3f967f.js",
+    "static/css/301.b10ee838.chunk.css": "/test-task-same-it/static/css/301.b10ee838.chunk.css",
+    "static/js/301.550e0222.chunk.js": "/test-task-same-it/static/js/301.550e0222.chunk.js",
+    "static/css/222.b10ee838.chunk.css": "/test-task-same-it/static/css/222.b10ee838.chunk.css",
+    "static/js/222.3b573941.chunk.js": "/test-task-same-it/static/js/222.3b573941.chunk.js",
+    "static/js/279.81d0cd6b.chunk.js": "/test-task-same-it/static/js/279.81d0cd6b.chunk.js",
     "static/media/Poppins-Regular.ttf": "/test-task-same-it/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/test-task-same-it/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/Poppins-SemiBold.ttf": "/test-task-same-it/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Alata-Regular.ttf": "/test-task-same-it/static/media/Alata-Regular.a90e0970a7aca7d36f95.ttf",
     "index.html": "/test-task-same-it/index.html",
     "main.0211fc0d.css.map": "/test-task-same-it/static/css/main.0211fc0d.css.map",
-    "main.6564ff93.js.map": "/test-task-same-it/static/js/main.6564ff93.js.map"
+    "main.0f3f967f.js.map": "/test-task-same-it/static/js/main.0f3f967f.js.map",
+    "301.b10ee838.chunk.css.map": "/test-task-same-it/static/css/301.b10ee838.chunk.css.map",
+    "301.550e0222.chunk.js.map": "/test-task-same-it/static/js/301.550e0222.chunk.js.map",
+    "222.b10ee838.chunk.css.map": "/test-task-same-it/static/css/222.b10ee838.chunk.css.map",
+    "222.3b573941.chunk.js.map": "/test-task-same-it/static/js/222.3b573941.chunk.js.map",
+    "279.81d0cd6b.chunk.js.map": "/test-task-same-it/static/js/279.81d0cd6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0211fc0d.css",
-    "static/js/main.6564ff93.js"
+    "static/js/main.0f3f967f.js"
   ]
 }
