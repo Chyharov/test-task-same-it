@@ -13,10 +13,8 @@ const MainPage = () => {
     <>
       <Header />
       <main>
-        <div className='container'>
           <TrackingForm onTrackingInfoReceived={handleTrackingInfoReceived} />
           <TrackingResults trackingInfo={trackingInfo} />
-        </div>
       </main>
     </>
   );

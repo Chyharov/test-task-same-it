@@ -52,6 +52,8 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
 
   return (
     <section className={s.sectionForm}>
+      <div className='container'>
+      <h1 className='visually__hidden'>Nova Poshta package search</h1>
       <form className={s.formSearch} onSubmit={handleSubmit}>
         <input className={s.search__input}
           type="text"
@@ -59,12 +61,13 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
           onChange={handleTrackingNumberChange}
           placeholder="Enter tracking number"
         />
-        {trackingNumber.length !== 14 && <p className={s.input__description}>Введіть 14 цифр вашої посилки</p>}
+        {trackingNumber.length !== 14 && <p className={s.input__description}>Enter 14 digits of your package.</p>}
         <button className={s.button__submit} type="submit" disabled={!validInput}>Get status TTN</button>
       </form>
       <SearchHistory history={searchHistory}
         onClearHistory={handleClearHistory}
-        onHistoryItemClick={handleHistoryItemClick} />
+          onHistoryItemClick={handleHistoryItemClick} />
+      </div>
     </section>
   );
 };

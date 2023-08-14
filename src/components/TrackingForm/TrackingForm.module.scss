@@ -1,6 +1,5 @@
 .sectionForm {
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .formSearch {
@@ -22,16 +21,4 @@
 
 .button__submit {
     min-width: 280px;
-    border-radius: 8px;
-    padding: 10px;
-    border: none;
-    color: var(--backgroundColor);
-    background-color: var(--primaryTextColor);
-}
-
-.button__submit:hover,
-.button__submit:focus {
-    color: var(--primaryTextColor);
-    background-color: var(--titleTextColor);
-    outline: 1px solid var(--primaryTextColor);
 }

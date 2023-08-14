@@ -1,0 +1,15 @@
+.sectionTrackingResults {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.traking__container {
+    max-width: 280px;
+    background-color: var(--hoverColor);
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+
+.taking__listItem:not(:last-child) {
+    margin-bottom: 20px;
+}

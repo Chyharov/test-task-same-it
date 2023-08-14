@@ -4,21 +4,6 @@
     display: flex;
 }
 
-.button__nav {
-    border-radius: 8px;
-    padding: 10px;
-    border: none;
-    color: var(--backgroundColor);
-    background-color: var(--primaryTextColor);
-}
-
-.button__nav:hover,
-.button__nav:focus {
-    color: var(--primaryTextColor);
-    background-color: var(--titleTextColor);
-    outline: 1px solid var(--primaryTextColor);
-}
-
 .button__nav:first-child {
     margin-right: 10px;
 

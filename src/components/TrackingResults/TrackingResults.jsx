@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './TrackingResults.module.scss'
 
 const TrackingResults = ({ trackingInfo }) => {
 
@@ -15,13 +16,18 @@ const TrackingResults = ({ trackingInfo }) => {
   const trackingDetails = data[0];
 
   return (
-    <div>
-      <ul>
-        <li><p>Статус доставки: {trackingDetails.Status}</p></li>
-        <li><p>Відправлено: {trackingDetails.CitySender}, {trackingDetails.WarehouseSender}</p></li>
-        <li><p>Отримано: {trackingDetails.CityRecipient}, {trackingDetails.WarehouseRecipient}</p></li>
-      </ul>
-    </div>
+    <section className={s.sectionTrackingResults}>
+      <div className='container'>
+        <div className={s.traking__container}>
+          <ul>
+            <li className={s.taking__listItem}><p><strong>Статус доставки:</strong> {trackingDetails.Status}</p></li>
+            <li className={s.taking__listItem}><p><strong>Відправлено:</strong> {trackingDetails.CitySender}, {trackingDetails.WarehouseSender}</p></li>
+            <li className={s.taking__listItem}><p><strong>Отримано:</strong> {trackingDetails.CityRecipient}, {trackingDetails.WarehouseRecipient}</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
   );
 };
 
