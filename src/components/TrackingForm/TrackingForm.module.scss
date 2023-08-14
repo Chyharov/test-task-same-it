@@ -1,0 +1,24 @@
+.sectionForm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.formSearch {
+    margin-bottom: 20px;
+}
+
+.button__submit {
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    color: var(--backgroundColor);
+    background-color: var(--primaryTextColor);
+}
+
+.button__submit:hover,
+.button__submit:focus {
+    color: var(--primaryTextColor);
+    background-color: var(--titleTextColor);
+    outline: 1px solid var(--primaryTextColor);
+}

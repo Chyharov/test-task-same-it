@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTrackingInfo } from '../../services/Api';
 import SearchHistory from 'components/SearchHistory/SearchHistory';
+import s from './TrackingForm.module.scss'
 
 const TrackingForm = ({ onTrackingInfoReceived }) => {
   const [trackingNumber, setTrackingNumber] = useState('');
@@ -50,21 +51,21 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <section className={s.sectionForm}>
+      <form className={s.formSearch} onSubmit={handleSubmit}>
         <input
           type="text"
           value={trackingNumber}
           onChange={handleTrackingNumberChange}
           placeholder="Enter tracking number"
         />
-        <button type="submit" disabled={!validInput}>Get status TTN</button>
         {trackingNumber.length !== 14 && <p>введіть 14 цифр вашої посилки</p>}
+        <button className={s.button__submit} type="submit" disabled={!validInput}>Get status TTN</button>
       </form>
       <SearchHistory history={searchHistory}
         onClearHistory={handleClearHistory}
         onHistoryItemClick={handleHistoryItemClick} />
-    </div>
+    </section>
   );
 };
 
