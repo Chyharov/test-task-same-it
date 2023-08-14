@@ -1,12 +1,12 @@
 import Header from 'components/Header/Header';
-import ComponentForMainPage from 'components/ComponentForMainPage/ComponentForMainPage';
+import TrackingForm from 'components/TrackingForm/TrackingForm';
 
 const MainPage = () => {
   return (
     <>
       <Header />
         <main>
-        <ComponentForMainPage />      
+        <TrackingForm />      
       </main>
     </>
   );
