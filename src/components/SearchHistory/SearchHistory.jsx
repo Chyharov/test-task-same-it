@@ -9,7 +9,7 @@ const SearchHistory = ({ history, onClearHistory, onHistoryItemClick }) => {
           <ul>
             {history.map((item, index) => (
               <li className={s.history__listItem}>
-                <button key={index} onClick={() => onHistoryItemClick(item)}>
+                <button type='button' aria-label='click for search again' key={index} onClick={() => onHistoryItemClick(item)}>
                   {item}
                 </button>
               </li>
@@ -18,7 +18,7 @@ const SearchHistory = ({ history, onClearHistory, onHistoryItemClick }) => {
       ) : (
         <p>No search history available.</p>
       )}
-      <button onClick={onClearHistory}>Clear History</button>
+      <button type='button' aria-label='clear history' onClick={onClearHistory}>Clear History</button>
     </section>
   );
 };

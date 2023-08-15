@@ -1,0 +1,23 @@
+@import '../../sass/utils/mixin';
+
+.input__office {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    min-width: 280px;
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        margin-right: 20px;
+    }
+}
+
+.input__officeBtn {
+    width: 280px;
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        max-width: 100px;
+        
+    }
+}

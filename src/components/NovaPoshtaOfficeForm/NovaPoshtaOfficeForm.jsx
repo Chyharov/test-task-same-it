@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import s from './NovaPoshtaOfficeForm.module.scss'
 
 const NovaPoshtaOfficeForm = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,14 +13,14 @@ const NovaPoshtaOfficeForm = ({ onSearch }) => {
   };
 
   return (
-    <div>
-      <input
+    <div className='container'>
+      <input className={s.input__office}
         type="text"
         placeholder="Введіть назву міста українською мовою"
         value={searchTerm}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Пошук</button>
+      <button type='button' aria-label='button search' className={s.input__officeBtn} onClick={handleSearch}>Пошук</button>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+@import '../../sass/utils/mixin';
+
+.office__list {
+    padding: 20px 10px;
+    background-color: var(--hoverColor);
+    border-radius: 8px;
+
+    @include mq(tab) {
+        width: 700px;
+        padding: 20px 20px;
+    }
+}
+
+.officel__listTitle,
+.officel__listItem {
+    margin-bottom: 20px;
+}
