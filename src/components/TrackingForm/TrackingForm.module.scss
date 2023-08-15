@@ -42,3 +42,10 @@
 .button__submit {
     min-width: 280px;
 }
+
+.button__submit_disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none;
+}

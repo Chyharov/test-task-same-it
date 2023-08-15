@@ -62,7 +62,7 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
           placeholder="Enter tracking number"
         />
         {trackingNumber.length !== 14 && <p className={s.input__description}>Enter 14 digits of your package.</p>}
-        <button className={s.button__submit} type="submit" aria-label='find package' disabled={!validInput}>Get status TTN</button>
+        <button className={`${s.button__submit} ${validInput ? '' : s.button__submit_disabled}`} type="submit" aria-label='find package' disabled={!validInput}>Get status TTN</button>
       </form>
       <SearchHistory history={searchHistory}
         onClearHistory={handleClearHistory}

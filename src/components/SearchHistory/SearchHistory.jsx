@@ -18,7 +18,9 @@ const SearchHistory = ({ history, onClearHistory, onHistoryItemClick }) => {
       ) : (
         <p>No search history available.</p>
       )}
-      <button type='button' aria-label='clear history' onClick={onClearHistory}>Clear History</button>
+      {history.length > 0 && (
+        <button type='button' aria-label='clear history' onClick={onClearHistory}>Clear History</button>
+      )}
     </section>
   );
 };
