@@ -1,3 +1,5 @@
+@import '../../sass/utils/mixin';
+
 .sectionTrackingResults {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -8,6 +10,16 @@
     background-color: var(--hoverColor);
     border-radius: 8px;
     padding: 20px 10px;
+
+    @include mq(tab) {
+        position: absolute;
+        top: 270px;
+    }
+
+    @include mq(desk) {
+        max-width: 600px;
+        padding: 20px 20px;
+    }
 }
 
 .taking__listItem:not(:last-child) {

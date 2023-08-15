@@ -52,7 +52,7 @@ const TrackingForm = ({ onTrackingInfoReceived }) => {
 
   return (
     <section className={s.sectionForm}>
-      <div className='container'>
+      <div className={'container ' + s.form__container}>
       <h1 className='visually__hidden'>Nova Poshta package search</h1>
       <form className={s.formSearch} onSubmit={handleSubmit}>
         <input className={s.search__input}

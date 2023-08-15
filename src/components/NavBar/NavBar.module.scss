@@ -2,6 +2,11 @@
 
 .navBar {
     display: flex;
+
+    @include mq(desk) {
+        width: 600px;
+        justify-content: flex-start;
+    }
 }
 
 .button__nav:first-child {

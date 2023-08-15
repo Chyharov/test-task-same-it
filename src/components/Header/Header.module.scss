@@ -2,10 +2,8 @@
 
 .header {
 
-
-  
   @include mq(tab) {
-    
+
   }
   
   @include mq(desk) {
@@ -16,6 +14,18 @@
 .header__padding {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+
+  @include mq(tab) {
+      height: 50px;
+    }
 }
 
 .logo__img {

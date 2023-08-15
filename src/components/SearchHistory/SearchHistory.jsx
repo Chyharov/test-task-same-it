@@ -3,7 +3,7 @@ import s from './SearchHistory.module.scss'
 
 const SearchHistory = ({ history, onClearHistory, onHistoryItemClick }) => {
   return (
-    <>
+    <section className={s.section__history}>
       <h2 className={s.history__title}>Search History</h2>
       {history.length > 0 ? (
           <ul>
@@ -19,7 +19,7 @@ const SearchHistory = ({ history, onClearHistory, onHistoryItemClick }) => {
         <p>No search history available.</p>
       )}
       <button onClick={onClearHistory}>Clear History</button>
-    </>
+    </section>
   );
 };
 

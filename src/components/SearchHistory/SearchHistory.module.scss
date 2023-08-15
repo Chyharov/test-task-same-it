@@ -1,7 +1,34 @@
+@import '../../sass/utils/mixin';
+
+.section__history {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include mq(tab) {
+        width: 310px;
+    }
+
+    @include mq(desk) {
+        width: 600px;
+    }
+
+    
+}
+
 .history__title {
     margin-bottom: 10px;
+
+    @include mq(desk) {
+        margin-bottom: 20px;
+    }
 }
 
 .history__listItem {
     margin-bottom: 10px;
+
+    @include mq(desk) {
+        margin-bottom: 20px;
+    }
 }
